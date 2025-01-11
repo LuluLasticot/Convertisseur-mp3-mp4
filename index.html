@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur YouTube vers MP3/MP4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Convertisseur YouTube</h1>
+        <div class="input-group">
+            <input type="text" id="youtube-url" placeholder="Collez le lien de la vidéo YouTube ici">
+        </div>
+        <div class="thumbnail-preview">
+            <img id="thumbnail" src="" alt="Miniature de la vidéo">
+        </div>
+        <div class="options-group">
+            <label for="audio-quality">Qualité Audio MP3:</label>
+            <select id="audio-quality">
+                <option value="128">128 kbps</option>
+                <option value="192">192 kbps</option>
+                <option value="256">256 kbps</option>
+                <option value="320">320 kbps</option>
+            </select>
+        </div>
+        <div class="button-group">
+            <button id="convert-youtube-mp3">Convertir YouTube en MP3</button>
+            <button id="convert-vimeo-mp3">Convertir Vimeo en MP3</button>
+            <button id="convert-dailymotion-mp3">Convertir Dailymotion en MP3</button>
+        </div>
+        <div class="options-group">
+            <label for="video-resolution">Résolution Vidéo MP4 (YouTube):</label>
+            <select id="video-resolution">
+                <option value="360">360p</option>
+                <option value="480">480p</option>
+                <option value="720">720p</option>
+            </select>
+        </div>
+        <div class="button-group">
+            <button id="convert-youtube-mp4">Convertir YouTube en MP4</button>
+            <button id="convert-vimeo-mp4">Convertir Vimeo en MP4</button>
+            <button id="convert-dailymotion-mp4">Convertir Dailymotion en MP4</button>
+        </div>
+        <div class="download-section">
+            <p id="download-link"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
